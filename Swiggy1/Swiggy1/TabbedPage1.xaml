@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Swiggy1.TabbedPage1"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            NavigationPage.HasNavigationBar="False"
+            SelectedTabColor="Orange"
+            UnselectedTabColor="Black"
+            BackgroundColor="White"
+   >
+    <TabbedPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Parent1" TargetType="View">
+                <Setter Property="Margin" Value="15,15,15,0"/>
+            </Style>
+            <Style x:Key="Labelbold" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="22"/>
+            </Style>
+            <Style x:Key="Labelnormal" TargetType="Label">
+                <Setter Property="TextColor" Value="Gray"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+            <Style x:Key="topicksview" TargetType="View">
+                <Setter Property="HeightRequest" Value="70"/>
+                <Setter Property="WidthRequest" Value="70"/>
+            </Style>
+            <Style x:Key="allrestframe" TargetType="View">
+                <Setter Property="HeightRequest" Value="100"/>
+                <Setter Property="WidthRequest" Value="100"/>
+            </Style>
+            
+            <Style x:Key="allrestimage" TargetType="Image">
+                <Setter Property="Aspect" Value="AspectFill"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+        </ResourceDictionary>
+    </TabbedPage.Resources>
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="SWIGGY" IconImageSource="Swiggy.png">
+        <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" Style="{StaticResource Parent1}">
+                <StackLayout Orientation="Horizontal">
+                <Image Source="location.png" HeightRequest="22"/>
+                    <Label Text="Home 1" Style="{StaticResource Labelbold}"/>
+                    <StackLayout Orientation="Horizontal" Margin="140,0,0,0">
+                        <Image Source="offer1.png" WidthRequest="25" HeightRequest="20"/>
+                            <Label Text="Offers" Style="{StaticResource Labelbold}" FontSize="16"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="Hafis Cottage, Near Ar Camp, Palace R..." Style="{StaticResource Labelnormal}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Horizontal">
+                <Frame HeightRequest="130" WidthRequest="160" Padding="0"
+                       Margin="15" CornerRadius="10">
+                    <StackLayout  Spacing="1" Margin="10,18">
+                            <Label Text="Restaurants" Style="{StaticResource Labelbold}" FontSize="18" />
+                            <Label Text="Enjoy your favourite treats" Style="{StaticResource Labelnormal}"/>
+                            <StackLayout Orientation="Horizontal"  HeightRequest="55"  HorizontalOptions="EndAndExpand">
+                                <Image Source="fast1.png"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame HeightRequest="130" WidthRequest="160" Padding="0"
+                       Margin="15" CornerRadius="10">
+                    <StackLayout  Spacing="1" Margin="10,18">
+                            <Label Text="Book Shops" Style="{StaticResource Labelbold}" FontSize="18" />
+                            <Label Text="Enjoy your favourite treats" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal"  HeightRequest="60" HorizontalOptions="EndAndExpand">
+                            <Image Source="books.png"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                    <StackLayout Orientation="Horizontal" Style="{StaticResource Parent1}">
+                    <Frame BackgroundColor="Orange" HeightRequest="25" CornerRadius="5" WidthRequest="-30"/>
+                    <StackLayout Margin="10,0,0,0">
+                        <Label Text="We're here to help. Our restaurants and essential delivery services are open from:" Style="{StaticResource Labelbold}" FontSize="16"/>
+                            <Label Text="8:00 AM to 7:30 PM" Style="{StaticResource Labelnormal}"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="3">
+                <Frame HeightRequest="180" WidthRequest="50" CornerRadius="10" Margin="15"  Background="pink">
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout>
+                        <StackLayout Spacing="-20">
+                            <Label Text="Hi, WE MISSED" TextColor="DarkMagenta" FontSize="20" FontAttributes="Bold"/>
+                                <Label Text="YOU!" TextColor="DarkMagenta" FontSize="65" FontAttributes="Bold"/>
+                        </StackLayout>
+                            <StackLayout Margin="0,0,100,0">
+                                <Label Text="Here's 60% off and more offers watiting for you" TextColor="Gray"/>
+                                <Button Text="GRAB OFFER" FontAttributes="Bold" TextColor="DarkMagenta" BackgroundColor="AntiqueWhite" HeightRequest="35" Margin="0,0,80,0"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout>
+                            <Image Source="ballon1.png"  TranslationX="-138" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+                <StackLayout Grid.Row="4" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <Image Source="like2.png" HeightRequest="20"/>
+                    <Label Text="Top Picks For You" Style="{StaticResource Labelbold}" FontSize="16"/>
+                </StackLayout>
+                <StackLayout Grid.Row="5" Style="{StaticResource Parent1}" >
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" Margin="0,0,0,15" Spacing="20">
+                            <StackLayout>
+                                <Frame Style="{StaticResource topicksview}" CornerRadius="10" Padding="0">
+                                    <Image Source="fd10.jfif"  Aspect="AspectFill"/>
+                                </Frame>
+                                <Label Text="Aramana" Style="{StaticResource Labelbold}" FontAttributes="None" FontSize="15" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="27 mins" Style="{StaticResource Labelnormal}" FontAttributes="None" FontSize="10" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame Style="{StaticResource topicksview}" CornerRadius="10" Padding="0">
+                                    <Image Source="fd11.jfif"  Aspect="AspectFill"/>
+                                </Frame>
+                                <Label Text="Thaff" Style="{StaticResource Labelbold}" FontAttributes="None" FontSize="15" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="22 mins" Style="{StaticResource Labelnormal}" FontAttributes="None" FontSize="10" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame Style="{StaticResource topicksview}" CornerRadius="10" Padding="0">
+                                    <Image Source="fd12.jfif"  Aspect="AspectFill"/>
+                                </Frame>
+                                <Label Text="Delicacy" Style="{StaticResource Labelbold}" FontAttributes="None" FontSize="15" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="39 mins" Style="{StaticResource Labelnormal}" FontAttributes="None" FontSize="10" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame Style="{StaticResource topicksview}" CornerRadius="10" Padding="0">
+                                    <Image Source="fd13.jfif"  Aspect="AspectFill"/>
+                                </Frame>
+                                <Label Text="Xperience" Style="{StaticResource Labelbold}" FontAttributes="None" FontSize="15" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="30 mins" Style="{StaticResource Labelnormal}" FontAttributes="None" FontSize="10" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame Style="{StaticResource topicksview}" CornerRadius="10" Padding="0">
+                                    <Image Source="fd14.jfif"  Aspect="AspectFill"/>
+                                </Frame>
+                                <Label Text="Lakia" Style="{StaticResource Labelbold}" FontAttributes="None" FontSize="15" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="28 mins" Style="{StaticResource Labelnormal}" FontAttributes="None" FontSize="10" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame Style="{StaticResource topicksview}" CornerRadius="10" Padding="0">
+                                    <Image Source="fd15.jfif"  Aspect="AspectFill"/>
+                                </Frame>
+                                <Label Text="Aryaas" Style="{StaticResource Labelbold}" FontAttributes="None" FontSize="15" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="18 mins" Style="{StaticResource Labelnormal}" FontAttributes="None" FontSize="10" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame Style="{StaticResource topicksview}" CornerRadius="10" Padding="0">
+                                    <Image Source="fd16.jfif"  Aspect="AspectFill"/>
+                                </Frame>
+                                <Label Text="Chaya" Style="{StaticResource Labelbold}" FontAttributes="None" FontSize="15" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="35 mins" Style="{StaticResource Labelnormal}" FontAttributes="None" FontSize="10" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+                <StackLayout Grid.Row="6" Style="{StaticResource Parent1}">
+                    <StackLayout>
+                        <Label Text="All Restaurants Nearby" Style="{StaticResource Labelbold}"/>
+                        <Label Text="Discover unique tastes near you" TextColor="Gray" Style="{StaticResource Labelnormal}"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="7" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20"  >
+                            <StackLayout Padding="-19">
+                                <Image Source="fd21.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Thaza Family Food Park" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, Arabian, NOrth..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 0.9kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="8" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20" >
+                            <StackLayout Padding="-20">
+                                <Image Source="fd20.jfif" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Aramana" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 3.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="9" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20" >
+                            <StackLayout Padding="-20">
+                                <Image Source="fd19.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Thaff - General Hospital Jn" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 1.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="10" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20" >
+                            <StackLayout Padding="-20">
+                                <Image Source="fd18.jfif" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Halais  Restaurant" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 2.3kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="11" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20" >
+                            <StackLayout Padding="-20">
+                                <Image Source="fd17.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Kream Korner" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 3.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="12" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20">
+                            <StackLayout Padding="-20">
+                                <Image Source="fd16.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Chillies Restaurant" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 3.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="13" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20" >
+                            <StackLayout Padding="-20">
+                                <Image Source="fd15.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Pastry Chef" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 2.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="14" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20">
+                            <StackLayout Padding="-20">
+                                <Image Source="fd14.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Arabian Shake" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 1.1kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="15" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20">
+                            <StackLayout Padding="-20">
+                                <Image Source="fd13.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Xperience" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 3.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="16" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20">
+                            <StackLayout Padding="-20">
+                                <Image Source="fd12.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Cafeteria" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 3.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="17" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20" >
+                            <StackLayout Padding="-20">
+                                <Image Source="fd11.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Gunashekhara" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 3.4kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="18" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20" >
+                            <StackLayout Padding="-20">
+                                <Image Source="fd24.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Woodland" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 0.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="19" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20" >
+                            <StackLayout Padding="-20">
+                                <Image Source="fd25.jfif" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Souurashtra" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 5.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="20" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                    <StackLayout>
+                        <Frame Style="{StaticResource allrestframe}" CornerRadius="20" >
+                            <StackLayout Padding="-20">
+                                <Image Source="fd16.jpg" Style="{StaticResource allrestimage}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="5,0">
+                        <Label Text="Premiere" Style="{StaticResource Labelbold}" FontSize="20"/>
+                        <Label Text="South Indian, North Indian, Chinese..." Style="{StaticResource Labelnormal}"/>
+                        <Label Text="Alappuzha City | 4.5kms" Style="{StaticResource Labelnormal}"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,10">
+                            <Image Source="discount.png" HeightRequest="15"/>
+                            <Label Text="60% off Upto $2" Style="{StaticResource Labelnormal}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="SEARCH" IconImageSource="search.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="1" Style="{StaticResource Parent1}">
+                <Frame BorderColor="LightGray" HeightRequest="22">
+                    <Label Text="Search for food and restaurants" TextColor="LightGray" FontSize="18"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Style="{StaticResource Parent1}">
+                <Label Text="Popular Cuisines" Style="{StaticResource Labelbold}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Margin="15" Orientation="Horizontal"  Spacing="18">
+                <StackLayout>
+                    <StackLayout>
+                        <Frame CornerRadius="100" 
+                       HeightRequest="80"
+                       WidthRequest="80"
+                       HorizontalOptions="Center"
+                       Padding="0"
+                       IsClippedToBounds="True">
+                            <Image Source="fd15.jpg" 
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Fill"
+                                   Aspect="AspectFill"/>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="15,0">
+                        <Label Text="Biriyani" Style="{StaticResource Labelnormal}" />
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <StackLayout>
+                        <Frame CornerRadius="100" 
+                       HeightRequest="80"
+                       WidthRequest="80"
+                       HorizontalOptions="Center"
+                       Padding="0"
+                       IsClippedToBounds="True">
+                            <Image Source="fd14.jpg" 
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Fill"
+                                   Aspect="AspectFill"/>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="15,0">
+                        <Label Text="Kalkurni" Style="{StaticResource Labelnormal}"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <StackLayout>
+                        <Frame CornerRadius="100" 
+                       HeightRequest="80"
+                       WidthRequest="80"
+                       HorizontalOptions="Center"
+                       Padding="0"
+                       IsClippedToBounds="True">
+                            <Image Source="fd11.jpg" 
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Fill"
+                                   Aspect="AspectFill"/>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Margin="15,0">
+                        <Label Text="Kathalan" Style="{StaticResource Labelnormal}"/>
+                    </StackLayout>
+                </StackLayout>
+
+                
+                
+                
+            </StackLayout>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="CART" IconImageSource="Cart.png">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="25">
+            <StackLayout>
+                <Image Source="fried.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="GOOD FOOD IS ALWAYS COOKING" Style="{StaticResource Labelbold}" FontSize="12" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Your cart is empty" Style="{StaticResource Labelnormal}" FontSize="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <Label Text="Add something from the menu" Style="{StaticResource Labelnormal}" FontSize="10"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="BROWSE RESTAURANTS" TextColor="DarkOrange" FontAttributes="Bold" FontSize="12" HeightRequest="40" WidthRequest="200" BorderColor="DarkOrange" BorderWidth="2" BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="ACCOUNT" IconImageSource="Account.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" Style="{StaticResource Parent1}" Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="HAMRAS" FontSize="18" Style="{StaticResource Labelbold}"/>
+                    <Label Text="8891507070  .  hamras1@gmail.com" Style="{StaticResource Labelnormal}"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand">
+                    <Label Text="EDIT" TextColor="Orange" FontAttributes="Bold"  Style="{StaticResource Labelnormal}"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Style="{StaticResource Parent1}">
+                <Line X1="2" X2="2" HeightRequest="2" WidthRequest="100" BackgroundColor="Black"></Line>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Horizontal" Style="{StaticResource Parent1}">
+                <StackLayout>
+                    <Label Text="My Account" Style="{StaticResource Labelbold}" FontSize="14"/>
+                    <Label Text="Adresses, Favourites and Offers" Style="{StaticResource Labelnormal}"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="dnarrow.png" WidthRequest="15"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Style="{StaticResource Parent1}">
+                <Line X1="1" X2="1" HeightRequest="1" WidthRequest="100" BackgroundColor="Black"></Line>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" Orientation="Horizontal" Style="{StaticResource Parent1}">
+                <StackLayout>
+                    <Label Text="Payments and Refunds" Style="{StaticResource Labelbold}" FontSize="14"/>
+                    <Label Text="Refund Status and Payment Modes" Style="{StaticResource Labelnormal}"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="dnarrow.png"  WidthRequest="15"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="5" Style="{StaticResource Parent1}">
+                <Line X1="1" X2="1" HeightRequest="1" WidthRequest="100" BackgroundColor="Black"></Line>
+            </StackLayout>
+            <StackLayout Grid.Row="6" Orientation="Horizontal" Style="{StaticResource Parent1}">
+                <StackLayout>
+                    <Label Text="Swiggy Money" Style="{StaticResource Labelbold}" FontSize="14"/>
+                    <Label Text="View Account Balance and Transactions History" Style="{StaticResource Labelnormal}"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="rtarrow.png"  WidthRequest="15"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="7" Style="{StaticResource Parent1}">
+                <Line X1="1" X2="1" HeightRequest="1" WidthRequest="100" BackgroundColor="Black"></Line>
+            </StackLayout>
+            <StackLayout Grid.Row="8" Orientation="Horizontal" Style="{StaticResource Parent1}">
+                <StackLayout>
+                    <Label Text="Help" Style="{StaticResource Labelbold}" FontSize="14"/>
+                    <Label Text="FAQs and Links" Style="{StaticResource Labelnormal}"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="rtarrow.png"  WidthRequest="15"/>
+                </StackLayout>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="9">
+                <Line X1="50" X2="50" HeightRequest="50" BackgroundColor="LightGray"/>
+                <Frame>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="LOGOUT" TextColor="Black" FontSize="14" FontAttributes="Bold"/>
+                        <Image Source="power1.png" HeightRequest="28" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="10"  HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                <Label Text="App version 3.68.2 (972)" TextColor="DarkGray" FontSize="10"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage>
+</TabbedPage>
